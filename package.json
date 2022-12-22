@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc -outDir dist src/main.ts",
     "lint": "eslint . --ext .ts",
-    "dev": "ts-node-dev --respawn --quiet src/main.ts"
+    "dev": "ts-node-dev --respawn --quiet src/cardano.ts"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +20,9 @@
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@cardano-sdk/cardano-services-client": "^0.8.0",
+    "@cardano-sdk/core": "^0.10.0"
   }
 }
